@@ -1,0 +1,59 @@
+﻿<Page x:Class="TradingFinalProject.TradingSignals"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TradingFinalProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TradingSignals" Foreground="#FFEFECEC">
+
+    <Grid Margin="0,0,-578,-246" Background="White">
+        <Label Content="Find your future&#xA;" HorizontalAlignment="Left" Margin="144,60,0,0" VerticalAlignment="Top" Foreground="Black" FontStyle="Italic" FontFamily="Monotype Corsiva" FontSize="18"/>
+        <Image HorizontalAlignment="Left" Height="88" Margin="89,36,0,0" VerticalAlignment="Top" Width="64" Source="/Image/Numerix-logo-black.png" OpacityMask="#FF8C1313"/>
+        <TextBox HorizontalAlignment="Left" Height="0" Margin="253,675,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="365,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="368" Width="495" Background="#FFE7D49E" Opacity="0.5"/>
+        <TextBox x:Name="date2" HorizontalAlignment="Left" Margin="117,391,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" Foreground="Black" Height="21" BorderThickness="0,0,0,0" FontFamily="Cambria" FontStyle="Italic">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Label Content="Trading Signals&#xA;" HorizontalAlignment="Left" Margin="524,182,0,0" VerticalAlignment="Top" Width="614" Foreground="Black" FontFamily="Cambria" FontStyle="Italic" FontSize="24"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="393,430,0,0" VerticalAlignment="Top" Background="Black" Width="437" Height="1"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="98,130,0,0" VerticalAlignment="Top" Background="Black" Width="1179" Height="1"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="613,640,0,0" VerticalAlignment="Top" Background="Black" Width="1180" Height="1" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.097"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="title2" Content="" HorizontalAlignment="Left" Margin="128,280,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ASSET" HorizontalAlignment="Left" Margin="586,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61" Height="20" Background="White" FontFamily="Cambria" FontStyle="Italic" FontSize="16"/>
+        <Button Content="Find latest signals" HorizontalAlignment="Left" Margin="543,293,0,0" VerticalAlignment="Top" Click="Button_Click" Width="142" Background="{x:Null}" FontFamily="Cambria" FontStyle="Italic" FontSize="16" Focusable="False"/>
+        <Label x:Name="sentiment1" Content="Waiting..." HorizontalAlignment="Left" Margin="461,345,0,0" VerticalAlignment="Top" Width="308" Foreground="Black" FontFamily="Cambria" FontSize="14" FontWeight="Normal" FontStyle="Italic"/>
+        <Label Content="largetxsVar :" HorizontalAlignment="Left" Margin="386,378,0,0" VerticalAlignment="Top" Width="119" FontSize="16" FontWeight="Normal" Foreground="Black" FontStyle="Italic" FontFamily="Cambria"/>
+        <Label x:Name="sentiment2" Content="Waiting..." HorizontalAlignment="Left" Margin="477,380,0,0" VerticalAlignment="Top" Width="308" Foreground="Black" FontFamily="Cambria" FontStyle="Italic" FontSize="14"/>
+        <Label Content="addresses Net Growth :" HorizontalAlignment="Left" Margin="388,454,0,0" VerticalAlignment="Top" Width="218" FontSize="16" FontWeight="Normal" Foreground="Black" FontStyle="Italic" FontFamily="Cambria"/>
+        <Label x:Name="sentiment3" Content="Waiting...." HorizontalAlignment="Left" Margin="546,455,0,0" VerticalAlignment="Top" Width="264" Foreground="Black" FontFamily="Cambria" FontStyle="Italic" FontSize="14"/>
+        <Label Content="concentration Var :" HorizontalAlignment="Left" Margin="388,496,0,0" VerticalAlignment="Top" Width="166" FontSize="16" FontWeight="Normal" Foreground="Black" FontStyle="Italic" FontFamily="Cambria"/>
+        <Label x:Name="sentiment4" Content="Waiting..." HorizontalAlignment="Left" Margin="521,498,0,0" VerticalAlignment="Top" Width="294" Foreground="Black" FontFamily="Cambria" FontStyle="Italic" FontSize="14"/>
+        <Label Content="inOutVar :" HorizontalAlignment="Left" Margin="388,343,0,0" VerticalAlignment="Top" Width="99" FontSize="16" FontWeight="Normal" Foreground="Black" FontFamily="Cambria" FontStyle="Italic"/>
+        <Button Content="Numerix" HorizontalAlignment="Left" Margin="153,38,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Cambria" Foreground="#FFE7D49E" FontSize="20" Click="Button_Click_1"/>
+        <Image HorizontalAlignment="Left" Height="1606" Margin="-744,-883,0,0" VerticalAlignment="Top" Width="1594" Source="/Image/Numerix-logo-black.png" Opacity="0.04" OpacityMask="#FF8C1313" Panel.ZIndex="-999"/>
+        <Button Content="?" HorizontalAlignment="Left" Margin="826,574,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Cambria" FontStyle="Italic" FontSize="14" Click="Button_Click_2"/>
+        <Button x:Name="Chart_Copy" Content="Chart" HorizontalAlignment="Left" Margin="348,64,0,0" VerticalAlignment="Top" Click="Button_Click" FontFamily="Cambria" FontSize="20" Foreground="Black" Background="{x:Null}" Width="62" FontStyle="Italic" BorderThickness="0,0,0,0"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="360,62,0,0" VerticalAlignment="Top" Background="#FFE7D49E" Width="45" Height="1"/>
+        <Button x:Name="TradingSignals_Copy" Content="Trading Signals&#xA;" HorizontalAlignment="Left" Margin="493,64,0,0" VerticalAlignment="Top" Click="TradingSignals_Click" FontFamily="Cambria" FontSize="20" Foreground="Black" Background="{x:Null}" Width="139" FontStyle="Italic" BorderThickness="0,0,0,0" Height="25"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="507,61,0,0" VerticalAlignment="Top" Background="#FFE7D49E" Width="117" Height="1"/>
+        <Button x:Name="CoinsAvailable" Content="Volume Rank&#xA;&#xA;" HorizontalAlignment="Left" Margin="694,65,0,0" VerticalAlignment="Top" Click="CoinsAvailable_Click" FontFamily="Cambria" FontSize="20" Foreground="Black" Background="{x:Null}" Width="139" FontStyle="Italic" BorderThickness="0,0,0,0" Height="26"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="703,62,0,0" VerticalAlignment="Top" Background="#FFE7D49E" Width="117" Height="1"/>
+        <Image HorizontalAlignment="Left" Height="1607" Margin="529,0,0,0" VerticalAlignment="Top" Width="1594" Source="/Image/Numerix-logo-black.png" Opacity="0.04" Panel.ZIndex="-9999"/>
+        <Button x:Name="CoinsAvailable_Copy" Content="Social Datas&#xA;&#xA;" HorizontalAlignment="Left" Margin="901,66,0,0" VerticalAlignment="Top" Click="SocialDatas_Click" FontFamily="Cambria" FontSize="20" Foreground="Black" Background="{x:Null}" Width="139" FontStyle="Italic" BorderThickness="0,0,0,0" Height="26"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="913,62,0,0" VerticalAlignment="Top" Background="#FFE7D49E" Width="117" Height="1"/>
+
+    </Grid>
+</Page>

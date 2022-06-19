@@ -1,0 +1,95 @@
+﻿<Window x:Class="TradingFinalProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TradingFinalProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="1408"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,-192,-38" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="367*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="292*"/>
+            <ColumnDefinition Width="487*"/>
+            <ColumnDefinition Width="613*"/>
+            <ColumnDefinition Width="208*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Numerix" HorizontalAlignment="Left" Margin="155,34,0,0" VerticalAlignment="Top" Width="94" Height="30" Foreground="#FFE7D49E" FontFamily="Cambria" FontSize="20"/>
+        <Label Content="Find your future&#xD;&#xA;" HorizontalAlignment="Left" Margin="144,60,0,0" VerticalAlignment="Top" Foreground="Black" FontStyle="Italic" FontFamily="Monotype Corsiva" FontSize="18"/>
+        <Button x:Name="Chart" Grid.Column="1" Content="Chart" HorizontalAlignment="Left" Margin="56,64,0,0" VerticalAlignment="Top" Click="Button_Click" FontFamily="Cambria" FontSize="20" Foreground="Black" Background="{x:Null}" Width="62" FontStyle="Italic" BorderThickness="0,0,0,0"/>
+        <Label Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="68,62,0,0" VerticalAlignment="Top" Background="#FFE7D49E" Width="45" Height="1"/>
+        <Image HorizontalAlignment="Left" Height="88" Margin="89,36,0,0" VerticalAlignment="Top" Width="64" Source="/Image/Numerix-logo-black.png" OpacityMask="#FF8C1313"/>
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="0" Margin="253,675,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="link2" HorizontalAlignment="Left" Margin="117,529,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" Height="47" Foreground="Black" BorderThickness="0,0,0,0" Grid.ColumnSpan="2" Panel.ZIndex="999" FontFamily="Cambria" FontStyle="Italic">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" Margin="98,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="368" Width="250" Background="#FFE7D49E" Opacity="0.5"/>
+        <TextBox x:Name="title2" HorizontalAlignment="Left" Margin="118,446,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="221" Foreground="Black" Grid.ColumnSpan="2" Height="48" BorderThickness="0,0,0,0" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold" FontSize="14">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="date2" HorizontalAlignment="Left" Margin="117,502,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="221" Foreground="Black" Grid.ColumnSpan="2" Height="21" BorderThickness="0,0,0,0" FontFamily="Cambria" FontStyle="Italic">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="title1" HorizontalAlignment="Left" Margin="117,285,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="221" Foreground="Black" Grid.ColumnSpan="2" Height="43" BorderThickness="0,0,0,0" FontFamily="Cambria" FontStyle="Italic" FontWeight="Bold" FontSize="14">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="date1" HorizontalAlignment="Left" Margin="118,340,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" Foreground="Black" Grid.ColumnSpan="2" Height="22" BorderThickness="0,0,0,0" FontFamily="Cambria" FontStyle="Italic">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="link1" HorizontalAlignment="Left" Margin="118,366,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="221" Foreground="Black" Grid.ColumnSpan="2" Height="48" BorderThickness="0,0,0,0" FontFamily="Cambria" FontStyle="Italic">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Label Content="Latest news" HorizontalAlignment="Left" Margin="162,201,0,0" VerticalAlignment="Top" Width="124" Foreground="Black" FontFamily="Cambria" FontStyle="Italic" FontSize="18"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="122,432,0,0" VerticalAlignment="Top" Background="Black" Width="196" Height="1" Grid.ColumnSpan="2"/>
+        <Label Content="Current BTC Prices :&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="126,204,0,0" VerticalAlignment="Top" Width="287" Foreground="Black" FontFamily="Cambria" FontStyle="Italic" FontSize="18" Grid.Column="2"/>
+        <Image HorizontalAlignment="Left" Height="1607" Margin="237,0,0,0" VerticalAlignment="Top" Width="1594" Source="/Image/Numerix-logo-black.png" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="2" Opacity="0.04" Panel.ZIndex="-9999"/>
+        <Image HorizontalAlignment="Left" Height="1606" Margin="-744,-883,0,0" VerticalAlignment="Top" Width="1594" Source="/Image/Numerix-logo-black.png" Grid.ColumnSpan="3" Opacity="0.04" OpacityMask="#FF8C1313" Panel.ZIndex="-999"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="98,130,0,0" VerticalAlignment="Top" Background="Black" Width="1179" Height="1" Grid.ColumnSpan="3"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="321,640,0,0" VerticalAlignment="Top" Background="Black" Width="1180" Height="1" Grid.ColumnSpan="3" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.097"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="TradingSignals" Grid.Column="1" Content="Trading Signals&#xD;&#xA;" HorizontalAlignment="Left" Margin="201,64,0,0" VerticalAlignment="Top" Click="TradingSignals_Click" FontFamily="Cambria" FontSize="20" Foreground="Black" Background="{x:Null}" Width="139" FontStyle="Italic" BorderThickness="0,0,0,0" Height="25"/>
+        <Label Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="215,61,0,0" VerticalAlignment="Top" Background="#FFE7D49E" Width="117" Height="1"/>
+        <Label x:Name="usd" Grid.Column="2" Content="eur" HorizontalAlignment="Left" Margin="146,254,0,0" VerticalAlignment="Top" Width="100" FontFamily="Cambria" FontStyle="Italic"/>
+        <Label x:Name="jpy" Grid.Column="2" Content="Label" HorizontalAlignment="Left" Margin="145,292,0,0" VerticalAlignment="Top" Width="112" FontFamily="Cambria" FontStyle="Italic"/>
+        <Label x:Name="eur" Grid.Column="2" Content="Label" HorizontalAlignment="Left" Margin="145,333,0,0" VerticalAlignment="Top" Width="128" FontFamily="Cambria" FontStyle="Italic"/>
+        <Label Grid.Column="2" Content="$" HorizontalAlignment="Left" Margin="136,255,0,0" VerticalAlignment="Top" FontFamily="Cambria" FontStyle="Italic"/>
+        <Label Grid.Column="2" Content="€" HorizontalAlignment="Left" Margin="136,333,0,0" VerticalAlignment="Top" FontFamily="Cambria" FontStyle="Italic"/>
+        <Label Grid.Column="2" Content="¥" HorizontalAlignment="Left" Margin="136,292,0,0" VerticalAlignment="Top" FontFamily="Cambria" FontStyle="Italic"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="115,407,0,0" VerticalAlignment="Top" Background="Black" Width="196" Height="1" Grid.Column="2"/>
+        <Label Content="Current ETH Prices :&#xA;&#xA;" HorizontalAlignment="Left" Margin="128,429,0,0" VerticalAlignment="Top" Width="269" Foreground="Black" FontFamily="Cambria" FontStyle="Italic" FontSize="18" Grid.Column="2"/>
+        <Label x:Name="usd_Copy" Grid.Column="2" Content="eur" HorizontalAlignment="Left" Margin="148,479,0,0" VerticalAlignment="Top" Width="100" FontFamily="Cambria" FontStyle="Italic"/>
+        <Label x:Name="jpy_Copy" Grid.Column="2" Content="Label" HorizontalAlignment="Left" Margin="147,517,0,0" VerticalAlignment="Top" Width="112" FontFamily="Cambria" FontStyle="Italic"/>
+        <Label x:Name="eur_Copy" Grid.Column="2" Content="Label" HorizontalAlignment="Left" Margin="147,558,0,0" VerticalAlignment="Top" Width="128" FontFamily="Cambria" FontStyle="Italic"/>
+        <Label Grid.Column="2" Content="$" HorizontalAlignment="Left" Margin="138,480,0,0" VerticalAlignment="Top" FontFamily="Cambria" FontStyle="Italic"/>
+        <Label Grid.Column="2" Content="€" HorizontalAlignment="Left" Margin="138,558,0,0" VerticalAlignment="Top" FontFamily="Cambria" FontStyle="Italic"/>
+        <Label Grid.Column="2" Content="¥" HorizontalAlignment="Left" Margin="138,517,0,0" VerticalAlignment="Top" FontFamily="Cambria" FontStyle="Italic"/>
+        <Button x:Name="CoinsAvailable" Grid.Column="1" Content="Volume Rank&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="402,65,0,0" VerticalAlignment="Top" Click="CoinsAvailable_Click" FontFamily="Cambria" FontSize="20" Foreground="Black" Background="{x:Null}" Width="139" FontStyle="Italic" BorderThickness="0,0,0,0" Grid.ColumnSpan="2" Height="26"/>
+        <Label Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="411,62,0,0" VerticalAlignment="Top" Background="#FFE7D49E" Width="117" Height="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="CoinsAvailable_Copy" Grid.Column="2" Content="Social Datas&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="122,66,0,0" VerticalAlignment="Top" Click="SocialDatas_Click" FontFamily="Cambria" FontSize="20" Foreground="Black" Background="{x:Null}" Width="139" FontStyle="Italic" BorderThickness="0,0,0,0" Height="26"/>
+        <Label Grid.Column="2" Content="" HorizontalAlignment="Left" Margin="134,62,0,0" VerticalAlignment="Top" Background="#FFE7D49E" Width="117" Height="1"/>
+    </Grid>
+</Window>

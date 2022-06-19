@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="bitcoin_PNG42.png" />
+      <None Remove="image-gc660c39e2_1280.png" />
+      <None Remove="Numerix-logo-black.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="ScottPlot.WPF" Version="4.1.33" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Image\bitcoin_PNG42.png" />
+      <Resource Include="Image\Numerix-logo-black.png" />
+    </ItemGroup>
+
+</Project>
